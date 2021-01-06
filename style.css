@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.menu a {
+	text-decoration: none;
+	padding: 1em;
+	text-align: center;
+	display: block;
+	color: white;
+}
+
+.menu > li > a {
+	background: #333;
+}
+
+.menu li:not(:last-child) > a {
+	border-bottom: 1px solid #555;
+}
+
+.submenu {
+	height: 0;
+	transition: all .35s ease;
+	overflow: hidden;
+}
+
+.submenu a {
+	background: #222;
+}
+
+.open {
+	height: 150px;
+}
